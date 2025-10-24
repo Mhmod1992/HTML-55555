@@ -51,6 +51,9 @@
     <div id="root"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Add Babel to transpile JSX and TypeScript in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Change script type to text/babel and add presets for react and typescript -->
+    <script type="text/babel" data-presets="react,typescript" src="index.tsx"></script>
   </body>
 </html>
